@@ -6,7 +6,6 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 import java.util.Properties;
 
-@Log4j2
 @SpringBootApplication
 public class SpringBootBoardApplication {
   public static void main(String[] args) {
