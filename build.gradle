@@ -36,6 +36,7 @@ dependencies {
     //Lombok을 테스트 환경에서 사용하기
     testCompileOnly 'org.projectlombok:lombok'
     testAnnotationProcessor 'org.projectlombok:lombok'
+
 }
 
 tasks.named('test') {
