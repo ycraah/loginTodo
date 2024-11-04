@@ -10,8 +10,6 @@ import java.util.Properties;
 @SpringBootApplication
 public class SpringBootBoardApplication {
   public static void main(String[] args) {
-    Properties properties = new Properties();
-    log.info(properties);
     SpringApplication.run(SpringBootBoardApplication.class, args);
   }
 }
