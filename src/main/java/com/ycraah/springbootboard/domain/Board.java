@@ -1,8 +1,14 @@
 package com.ycraah.springbootboard.domain;
 
 import jakarta.persistence.*;
+import lombok.*;
 
 @Entity
+@Getter
+@Builder
+@AllArgsConstructor
+@NoArgsConstructor
+@ToString
 public class Board extends BaseEntity{
   @Id
   @GeneratedValue(strategy = GenerationType.IDENTITY)
