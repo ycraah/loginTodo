@@ -36,4 +36,10 @@ public class BoardRepositoryTests {
     Board board = result.orElseThrow();
     log.info(board);
   }
+
+  @Test
+  public void deleteTest(){
+    Long bno = 100L;
+    boardRepository.deleteById(bno);
+  }
 }
