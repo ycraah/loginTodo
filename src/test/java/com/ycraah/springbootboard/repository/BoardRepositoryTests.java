@@ -60,4 +60,11 @@ public class BoardRepositoryTests {
     List<Board> todoList = result.getContent();
     todoList.forEach(board -> log.info(board));
   }
+
+  @Test
+  public void searchTest(){
+    //2 page order by bno desc
+    Pageable pageable = PageRequest.of(1, 10, Sort.by("bno").descending());
+    boardRepository.search(pageable);
+  }
 }
